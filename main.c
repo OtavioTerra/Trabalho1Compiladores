@@ -30,15 +30,7 @@ void salvaReservadas(){
 }
 
 
-void automatoNumeros(char palavra[]){
-
-    //Abre o arquivo de saida
-    FILE *ponteiro_saida;
-    ponteiro_saida = fopen("saida.txt", "a+");
-    if(ponteiro_saida == NULL){
-        printf("Erro na leitura de arquivo\n");
-        return;
-    }
+void automatoNumeros(char palavra[], FILE *ponteiro_saida){
 
     //Variaveis
     int i = 0, j;
@@ -92,15 +84,6 @@ void automatoNumeros(char palavra[]){
 // Recebe uma palavra(token)
 // Verifica se a palavra é valida e se é uma palavra reservada
 void automatoIdentificadores(char palavra[], FILE *ponteiro_saida){
-
-    //Abre o arquivo de saida
-   /* FILE *ponteiro_saida;
-    ponteiro_saida = fopen("saida.txt", "a+");
-    if(ponteiro_saida == NULL){
-        printf("Erro na leitura de arquivo\n");
-        return;
-    }
-    */
 
     //Variaveis
     int j, i = 0, flag = 0, flag_reservada = 0;

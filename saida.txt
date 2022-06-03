@@ -1,6 +1,0 @@
-beginl -> identificador_simb
-_beginl -> (ERRO)invalida_simb
-_beginl -> (ERRO)invalida_simb
-_beginl -> (ERRO, PALAVRA INVALIDA)invalida_simb
-_oi -> (ERRO, PALAVRA INVALIDA) invalida_simb
-var -> var_simb
